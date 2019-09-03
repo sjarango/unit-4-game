@@ -3,19 +3,42 @@
     <head>
         <title></title>
 
-        <!-- <link rel="stylesheet" href="/assets/css/reset.css">
-        <link rel="stylesheet" href="/assets/css/style.css"> -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
     </head>
     <body>
 
-        <h1>Crystals Collector!</h1>
+        <div id="container">
+            <h1>Crystals Collector!</h1>
+            <div id="instructions">
+                <h3>Instructions: </h3>
 
-        <div class="crystals">
-            <img id="crystal-1" src="">1
-            <img id="crystal-2" src="">2
-            <img id="crystal-3" src="">3
-            <img id="crystal-4" src="">4
+            </div>
+
+            <div class="scores">
+                Target number: <div id="target-number"></div>
+            </div>
+
+            <div class="scores">
+                Wins: <div id="wins"></div>
+            </div>
+
+            <div class="scores">
+                Losses: <div id="losses"></div>
+            </div>
+
+            <div class="crystals">
+                <img id="crystal-1" src="assets/images/image1.jpg">1
+                <img id="crystal-2" src="assets/images/image2.jpg">2
+                <img id="crystal-3" src="assets/images/image3.jpg">3
+                <img id="crystal-4" src="assets/images/image4.jpg">4
+            </div>
+
+            <div class="scores">
+                Your total score is: <div id="user-number"></div>
+            </div>
+
         </div>
         <!-- Added link to the jQuery Library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

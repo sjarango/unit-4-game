@@ -25,10 +25,24 @@ function setCrystals(){
     }
 }
 
+function adding(crystalNum) {
+    userScore = parseInt(userScore) + parseInt(crystalNum);
+    $('#user-number').html(userScore);
+    // check logic
+    console.log("User score is " + userScore);
+}
+
+
+
 function reset() {
     gameScore = scoreNumber();
     userScore = 0;
+
+    
+
     setCrystals();
 }
 
 setCrystals();
+
+

@@ -1,0 +1,35 @@
+
+.crystals {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#crystal-1 {
+    width: 150px;
+    height: 150px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#crystal-2 {
+    width: 150px;
+    height: 150px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#crystal-3 {
+    width: 150px;
+    height: 150px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#crystal-4 {
+    width: 150px;
+    height: 150px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
