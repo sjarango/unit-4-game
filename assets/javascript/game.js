@@ -66,4 +66,18 @@ function reset() {
     
 }
 
+$('#crystal-1').on('click', function(){
+    adding(crystals[0]);
+});
 
+$('#crystal-2').on('click', function(){
+    adding(crystals[1]);
+});
+
+$('#crystal-3').on('click', function(){
+    adding(crystals[2]);
+});
+
+$('#crystal-4').on('click', function(){
+    adding(crystals[3]);
+});
