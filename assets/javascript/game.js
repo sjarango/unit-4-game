@@ -1,9 +1,15 @@
 
-var gameScore;
+var gameScore = scoreNumber();
 var userScore = 0;
 var wins = 0;
 var losses = 0;
 var crystals = [null, null, null, null];
+
+$('#target-number').html(gameScore);
+$('#user-number').html(userScore);
+$('#wins').html(wins);
+$('#losses').html(losses);
+setCrystals();
 
 // Math.floor(Math.random() * ((y-x)+1) + x);
 // x = start , y = end
@@ -28,21 +34,36 @@ function setCrystals(){
 function adding(crystalNum) {
     userScore = parseInt(userScore) + parseInt(crystalNum);
     $('#user-number').html(userScore);
-    // check logic
     console.log("User score is " + userScore);
+    check();
 }
 
-
+function check() {
+    if ( gameScore === userScore ){
+        alert("YOU WIN!!!");
+        console.log("YOU WIN!");
+        wins++;
+        $('#wins').html(wins);
+        reset();
+    }
+    else if ( userScore > gameScore ) {
+        alert("YOU LOSE!!!");
+        console.log("YOU LOSE");
+        losses++;
+        $('#losses').html(losses);
+        reset();
+    }
+    
+}
 
 function reset() {
     gameScore = scoreNumber();
     userScore = 0;
-
-    
+    $('#target-number').html(gameScore);
+    $('#user-number').html(userScore);
 
     setCrystals();
+    
 }
-
-setCrystals();
 
 
